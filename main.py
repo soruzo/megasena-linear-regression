@@ -39,7 +39,7 @@ model.fit(X, y, epochs=100, batch_size=32, verbose=1)
 
 # Gerando as próximas possíveis 10 sequências de 6 números
 test_data = [data[-1]]
-for i in range(20):
+for i in range(5):
     # Convertendo os dados de entrada em uma matriz binária
     binary_test_data = to_binary_matrix(list(itertools.chain.from_iterable(test_data)))
     # Prevendo a próxima sequência de 6 números
